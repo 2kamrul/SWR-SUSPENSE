@@ -1,0 +1,107 @@
+<body link="#00a5b5" vlink="#00a5b5" alink="#00a5b5">
+
+    <style type="text/css">
+        @media only screen and (max-width: 600px) {
+            .main {
+                width: 320px !important;
+            }
+
+            .top-image {
+                width: 100% !important;
+            }
+
+            .inside-footer {
+                width: 320px !important;
+            }
+
+            table[class="contenttable"] {
+                width: 320px !important;
+                text-align: left !important;
+            }
+
+            td[class="force-col"] {
+                display: block !important;
+            }
+
+            td[class="rm-col"] {
+                display: none !important;
+            }
+
+            .mt {
+                margin-top: 15px !important;
+            }
+
+            *[class].width300 {
+                width: 255px !important;
+            }
+
+            *[class].block {
+                display: block !important;
+            }
+
+            *[class].blockcol {
+                display: none !important;
+            }
+
+            .emailButton {
+                width: 100% !important;
+            }
+
+            .emailButton a {
+                display: block !important;
+                font-size: 18px !important;
+            }
+
+        }
+    </style>
+
+    <table
+        style="margin-left: auto;margin-right: auto;padding: 0;font-family: Arial, sans-serif;border-top: 4px solid #00a5b5;border-bottom: 4px solid #00a5b5">
+        <tr>
+            <td
+                style="padding-top:5px;color: #555559;font-size: 16px;line-height: 30px;font-weight: bold;text-align: center;">
+                <div style="color: #00a5b5;font-size: 24px;padding-bottom: 15px;padding-bottom: 20px;">
+                    <%= title %>
+                </div>
+                <!-- <div>
+                    <img class="top-image" src="cid:logo" width="560" height="200" />
+                </div> -->
+                <div style="font-size: 18px;">
+                    <%= company_name %>
+                </div>
+                <div>
+                    (<%= requested_for %>)
+                </div>
+                <div style="color: #00a5b5;">
+                    <%= code !='undefined' ? code : null %>
+                </div>
+                <div>
+                    <%= unit %>
+                </div>
+                <div style="padding-bottom: 20px;">
+                    <%= type %>
+                </div>
+                <div>
+                    <a style="color:#ffffff; background-color: #00a5b5;  border: 10px solid #00a5b5; border-radius: 3px; text-decoration:none;"
+                        href=<%=link %>>Check Here >></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: #555559;font-size: 12px;line-height: 20px;background: #fff;text-align: center;">
+                <div>
+                    <hr size="1" color="#eeeff0">
+                </div>
+                <div id="address" class="mktEditable">
+                    <b>
+                        <%= send_by %>
+                    </b>
+                    <br>
+                    <%= sender_email %> <br>
+                        <!-- <a style="color: #00a5b5;" href="https://www.beximco.com/">Contact
+                                        Us</a> -->
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
