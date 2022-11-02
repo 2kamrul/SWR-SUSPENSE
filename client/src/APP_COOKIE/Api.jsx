@@ -1,4 +1,4 @@
-import { axiosSecretInstance } from './AxiosInstance'
+import { axiosSecretInstance } from 'Services/AxiosInstances'
 
 
 export const SET_COOKIES = async () => {

@@ -1,4 +1,4 @@
-import { Button, Container, Stack } from '@mui/material';
+import { Button, Container, Stack, Typography } from '@mui/material';
 
 import { useNavigate } from 'react-router-dom'
 
@@ -7,6 +7,7 @@ const Dashboard = () => {
     return (
         <Container maxWidth='md' sx={{ p: 4 }}>
             <Stack spacing={3}>
+                <Typography variant='h4' fontWeight='bold' color='textSecondary' textAlign='center' >TEST PROJECT</Typography>
                 <Button
                     variant='contained'
                     size='large'

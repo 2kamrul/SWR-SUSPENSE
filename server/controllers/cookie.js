@@ -49,7 +49,7 @@ exports.SET_COOKIES = async (req, res) => {
 
 exports.GET_COOKIES = async (req, res) => {
     try {
-        console.log({ ...req.cookies, ...req.signedCookies })
+        // console.log({ ...req.cookies, ...req.signedCookies })
         res.status(200).json({ ...req.cookies, ...req.signedCookies })
     } catch (error) {
         console.log(error)
@@ -60,7 +60,7 @@ exports.GET_COOKIES = async (req, res) => {
 exports.DELETE_COOKIES = async (req, res) => {
     try {
         res.clearCookie('non_signed_cookie')
-        res.status(200).json({ message: 'Cookie has been deleted' })
+        res.status(200).json({ message: 'non_signed_cookie has been deleted' })
     } catch (error) {
         console.log(error)
         res.status(500).json({ message: 'Error' })

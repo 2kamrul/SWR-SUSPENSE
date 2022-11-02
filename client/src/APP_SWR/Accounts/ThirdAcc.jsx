@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import { Box, Card, CardContent, Typography } from '@mui/material'
 import useSWR from 'swr'
 import { ErrorBoundary } from 'react-error-boundary'
-import Error from 'Components/Error'
+import Error from 'APP_SWR/Components/Error'
 
 const ThirdAcc = () => {
     return (

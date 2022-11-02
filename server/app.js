@@ -17,11 +17,9 @@ app.use(cors({
 }))
 app.use(morgan('dev'))
 
-
 app.use('/swr', require('./routers/swr'))
 
 app.use('/cookie', require('./routers/cookie'))
-
 
 process.env.ENVIORNMENT === 'PRODUCTION'
     ? app.listen(process.env.port)

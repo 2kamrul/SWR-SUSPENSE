@@ -1,6 +1,6 @@
 import 'App.css'
 import { Routes, Route } from "react-router-dom"
-import UserRoutes from 'APP_USER/Routes'
+import UserRoutes from 'APP_SWR/Routes'
 import CookieRoutes from 'APP_COOKIE/Routes'
 import AxiosInterceptors from 'Services/AxiosInterceptors'
 import Dashboard from 'Core/Dashboard'

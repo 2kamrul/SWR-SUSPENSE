@@ -1,8 +1,8 @@
 import { Box, Typography, Stack } from '@mui/material'
 import useSWR from 'swr'
-import FirstAcc from 'Components/Accounts/FirstAcc'
-import SecondAcc from 'Components/Accounts/SecondAcc'
-import ThirdAcc from 'Components/Accounts/ThirdAcc'
+import FirstAcc from 'APP_SWR/Accounts/FirstAcc'
+import SecondAcc from 'APP_SWR/Accounts/SecondAcc'
+import ThirdAcc from 'APP_SWR/Accounts/ThirdAcc'
 import { axiosInstanceFetcher } from 'Services/SwrFetchers'
 const UserDetails = () => {
     const { data, error, mutate } = useSWR('/swr/user/details', axiosInstanceFetcher, {

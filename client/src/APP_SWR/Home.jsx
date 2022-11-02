@@ -1,9 +1,9 @@
 import { Container } from '@mui/material'
 import { Suspense } from 'react'
 import Spinner from 'Core/Spinner'
-import UserDetails from 'Components/UserDetails'
+import UserDetails from 'APP_SWR/Components/UserDetails'
 import { ErrorBoundary } from 'react-error-boundary'
-import Error from 'Components/Error'
+import Error from 'APP_SWR/Components/Error'
 
 const Home = () => {
     return (

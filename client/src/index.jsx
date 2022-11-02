@@ -18,9 +18,7 @@ root.render(
         revalidateOnReconnect: false, // When computer comes online (User return from lock screen)
         errorRetryInterval: 2000,
         shouldRetryOnError: true,
-        onErrorRetry: {
-
-        }
+        revalidateOnMount: true
       }}>
         <Routes>
           <Route path='/*' element={<App />} />
