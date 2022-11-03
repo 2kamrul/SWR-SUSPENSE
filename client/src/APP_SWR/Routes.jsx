@@ -2,7 +2,7 @@ import SwrRootLayout from "Core/RootLayouts/SwrRootLayout";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 
-const UserRoutes = () => {
+const SwrRoute = () => {
     return (
         <Routes>
             <Route element={<SwrRootLayout />}>
@@ -12,4 +12,4 @@ const UserRoutes = () => {
     )
 }
 
-export default UserRoutes
+export default SwrRoute

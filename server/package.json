@@ -8,7 +8,7 @@
     "st": "set ENVIORNMENT=DEVELOPMENT && nodemon app.js",
     "dev": "nodemon app.js",
     "test": "jest",
-    "config": "node config.js"
+    "populate": "node populate.js"
   },
   "keywords": [],
   "author": "",

@@ -19,6 +19,8 @@ app.use(morgan('dev'))
 
 app.use('/swr', require('./routers/swr'))
 
+app.use('/mui', require('./routers/mui'))
+
 app.use('/cookie', require('./routers/cookie'))
 
 process.env.ENVIORNMENT === 'PRODUCTION'

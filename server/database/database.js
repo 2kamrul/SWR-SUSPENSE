@@ -1,18 +1,12 @@
 const { Sequelize } = require('sequelize')
-const { dbConnectionLog, GET_DB_HOST_15, GET_DB_HOST_16 } = require('./__helperDB')
+const { dbConnectionLog } = require('./__helperDB')
 
-/** ========= DASHBOARD ========= */
-const db_dashboard = new Sequelize('DASHBOARD', process.env.DB_USER, process.env.DB_PASS, {
-    host: GET_DB_HOST_15(),
-    port: process.env.DB_PORT,
+const db_mui = new Sequelize('MUI', 'test', 'test', {
+    host: 'localhost',
+    port: 1433,
     dialect: 'mssql',
+    // logging: console.log,
     logging: false,
-    // logging: (output) => {
-    //     // if (opts.log_queries) {
-    //     //     log.it("sequelize_log", { log: output });
-    //     // }
-    //     console.log(output)
-    // },
     dialectOptions: {
         options: {
             useUTC: true,
@@ -28,11 +22,10 @@ const db_dashboard = new Sequelize('DASHBOARD', process.env.DB_USER, process.env
         idle: 10000
     },
 })
-db_dashboard.authenticate()
-    .then(() => dbConnectionLog('DASHBOARD'))
-    .catch((error) => console.log('DASHBOARD Connection Error => : ', error))
-
+db_mui.authenticate()
+    .then(() => dbConnectionLog('MUI'))
+    .catch((error) => console.log('MUI Connection Error => : ', error))
 
 module.exports = {
-    db_dashboard,
+    db_mui
 }

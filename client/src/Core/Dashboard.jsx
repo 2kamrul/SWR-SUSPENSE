@@ -23,6 +23,26 @@ const Dashboard = () => {
                     size='large'
                     disableElevation
                     onClick={() => {
+                        navigate('/mui')
+                    }}>
+                    MUI TABLE
+                </Button>
+
+                <Button
+                    variant='contained'
+                    size='large'
+                    disableElevation
+                    onClick={() => {
+                        navigate('/mrt')
+                    }}>
+                    MATERIAL REACT TABLE
+                </Button>
+
+                <Button
+                    variant='contained'
+                    size='large'
+                    disableElevation
+                    onClick={() => {
                         navigate('/cookie')
                     }}>
                     COOKIE
